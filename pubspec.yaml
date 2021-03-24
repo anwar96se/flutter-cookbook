@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  awesome_package: ^0.0.1
 
 dev_dependencies:
   flutter_test:
@@ -18,3 +19,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: packages/awesome_package/fonts/Raleway-Regular.ttf
+        - asset: packages/awesome_package/fonts/Raleway-Italic.ttf
+          style: italic
