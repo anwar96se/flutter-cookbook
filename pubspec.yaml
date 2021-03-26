@@ -24,3 +24,13 @@ flutter:
       fonts:
         - asset: packages/awesome_package/fonts/Exo2-Bold.ttf
         - asset: packages/awesome_package/fonts/Exo2-Black.ttf
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway-Italic.ttf
+        - style: italic
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
+        - asset: assets/fonts/RobotoMono-Bold.ttf
+        - weight: 700
