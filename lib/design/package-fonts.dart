@@ -18,8 +18,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: Center(
         child: Text(
-          'Using the Raleway font from the awesome_package',
-          style: TextStyle(fontFamily: 'Raleway', package: 'awesome_package'),
+          'Using the Exo2 font from the awesome_package',
+          style: TextStyle(fontFamily: 'Exo2'),
         ),
       ),
     );

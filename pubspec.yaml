@@ -20,8 +20,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   fonts:
-    - family: Raleway
+    - family: Exo2
       fonts:
-        - asset: packages/awesome_package/fonts/Raleway-Regular.ttf
-        - asset: packages/awesome_package/fonts/Raleway-Italic.ttf
-          style: italic
+        - asset: packages/awesome_package/fonts/Exo2-Bold.ttf
+        - asset: packages/awesome_package/fonts/Exo2-Black.ttf
