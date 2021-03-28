@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
       (index) => Colors.primaries[(index * 4) % Colors.primaries.length],
     )
   ];
+  final _filterColor = ValueNotifier<Color>(Colors.white);
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,20 +41,29 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _buildPhotoWithFilter() {
-    return Image.network(
-      'https://flutter.dev/docs/cookbook/img-files/effects/instagram-buttons/millenial-dude.jpg',
-      colorBlendMode: BlendMode.hardLight,
+    return ValueListenableBuilder(
+      valueListenable: _filterColor,
+      builder: (context, value, child) {
+        return Image.network(
+          'https://flutter.dev/docs/cookbook/img-files/effects/instagram-buttons/millenial-dude.jpg',
+          color: (value as Color).withOpacity(0.5),
+          colorBlendMode: BlendMode.color,
+          fit: BoxFit.cover,
+        );
+      },
     );
   }
 
   Widget _buildFilterSelector() {
     return FilterSelector(
       filters: _filters,
-      onFilterSelected: _onFilterChanger,
+      onFilterSelected: _onFilterChanged,
     );
   }
 
-  void _onFilterChanger(Color selectedColor) {}
+  void _onFilterChanged(Color selectedColor) {
+    _filterColor.value = selectedColor;
+  }
 }
 
 class FilterSelector extends StatefulWidget {
