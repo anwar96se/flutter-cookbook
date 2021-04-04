@@ -367,6 +367,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.1-nullsafety.1"
+  web_socket_channel:
+    dependency: "direct main"
+    description:
+      name: web_socket_channel
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   webdriver:
     dependency: transitive
     description:
