@@ -12,6 +12,7 @@ dependencies:
   awesome_package: ^0.0.1
   transparent_image: ^2.0.0
   cached_network_image: ^3.0.0
+  http: ^0.13.1
 
 dev_dependencies:
   flutter_test:
